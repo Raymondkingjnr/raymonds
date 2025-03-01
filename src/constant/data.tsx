@@ -11,8 +11,6 @@ import {
   GitIcon,
 } from "@/assets/icons/skills-icon";
 
-import { game, aiImg, sportify, hotel, cars, movie } from "@/assets/images";
-
 export const skillsData = [
   {
     title: "Javascript",

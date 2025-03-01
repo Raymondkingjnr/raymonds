@@ -4,7 +4,6 @@ import Image from "next/image";
 import { devImg } from "@/assets/images";
 import { Button } from "./ui/button";
 import { GitBranchIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
-import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -24,12 +23,12 @@ const Hero = () => {
         </div>
 
         <h3 className=" text-2xl md:text-5xl font-bold py-2.5">
-          hi I'm Raymond
+          hi I&apos;m Raymond
         </h3>
         <p className="font-normal text-sm md:text-base w-full md:w-1/2 mx-auto">
           Am a software developer (Frontend) with a passion for building
-          beautiful and functional web applications. I'm a quick learner and I'm
-          always looking for new challenges.
+          beautiful and functional web applications. I&apos;m a quick learner
+          and I&apos;m always looking for new challenges.
         </p>
         <div className=" flex justify-center gap-5 mt-5">
           <a
