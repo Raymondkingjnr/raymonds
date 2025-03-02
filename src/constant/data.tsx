@@ -80,7 +80,7 @@ export const projectsData = [
   },
   {
     gitLink: "https://github.com/Raymondkingjnr/artist-profile-",
-    url: "https://vercel.com/raymondkingjnrs-projects/tuneinbio",
+    url: "https://tuneinbio.vercel.app/",
     title: "Tune In Bio",
     stacks: ["React", "Javascript", "Tailwindcss", "Spoitfy API"],
     des: "A website that allows user to search any of their favorite artists that are avaliable on sportify they can also see the artist albums and top tracks",
