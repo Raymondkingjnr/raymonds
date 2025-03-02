@@ -88,9 +88,15 @@ const Projects = () => {
       </div>
 
       <div className="flex justify-center mt-[2rem]">
-        <Button className="bg-[#FF7F50] w-[200px] h-[50px] cursor-pointer">
-          More
-        </Button>
+        <a
+          href="https://github.com/Raymondkingjnr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className="bg-[#FF7F50] w-[200px] h-[50px] cursor-pointer">
+            More
+          </Button>
+        </a>
       </div>
     </motion.div>
   );
