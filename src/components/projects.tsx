@@ -80,7 +80,7 @@ const Projects = () => {
                 <p key={index}>{items}</p>
               ))}
             </div>
-            <p className="pt-3 pr-2.5 text-sm font-semibold leading-[2rem]">
+            <p className="pt-3 text-sm font-semibold leading-[2rem]">
               {projects.des}
             </p>
           </motion.div>

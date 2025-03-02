@@ -7,7 +7,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section className=" max-w-[1200px] mx-auto  pt-[3rem] px-[1.5rem]">
-      <Link href="/guest-book">
+      <Link href="/guest-book" className=" hidden md:block">
         <Button className=" w-[180px] h-[40px] bg-slate-800">GuestBook</Button>
       </Link>
       <div className=" grid place-content-center text-center">
@@ -32,6 +32,11 @@ const Hero = () => {
             beautiful and functional web applications. I&apos;m a quick learner
             and I&apos;m always looking for new challenges.
           </p>
+          <Link href="/guest-book" className="block md:hidden mt-3">
+            <Button className=" w-[180px] h-[40px] bg-slate-800">
+              GuestBook
+            </Button>
+          </Link>
           <div className=" flex justify-center gap-5 mt-5">
             <a
               href="https://twitter.com/raymond_dwebdev"
@@ -60,7 +65,7 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="mt-5 bg-[#FF7F50] w-[200px] h-[40px] cursor-pointer">
+            <Button className="mt-5 bg-[#FF7F50] w-[180px] h-[40px] cursor-pointer">
               Contact Me
             </Button>
           </a>
