@@ -15,7 +15,7 @@ const Skills = () => {
       const tickerWidth = tickerRef.current.scrollWidth;
       // const viewportWidth = tickerRef.current.clientWidth;
       const travelDistance = tickerWidth / 2; // Travel full length before restart
-      const duration = travelDistance / 100; // Adjust speed
+      const duration = travelDistance / 20; // Adjust speed
 
       await controls.set({ x: 0 });
       await controls.start({

@@ -25,7 +25,7 @@ const Projects = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.8,
         ease: "easeOut",
       },
     },
@@ -54,7 +54,7 @@ const Projects = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ delay: index * 0.2 }}
+            transition={{ delay: index * 0.5 }}
           >
             <h2 className="font-medium text-xl capitalize">{projects.title}</h2>
             <span className="flex gap-[1rem] py-3">
