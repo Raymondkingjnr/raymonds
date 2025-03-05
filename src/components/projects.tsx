@@ -58,22 +58,22 @@ const Projects = () => {
           >
             <h2 className="font-medium text-xl capitalize">{projects.title}</h2>
             <span className="flex gap-[1rem] py-3">
-              <a
+              {/* <a
                 href={projects.gitLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-[40px] w-[40px] bg-orange-500 rounded-3xl grid place-content-around"
-              >
+              > */}
                 <GithubIcon size={18} />
-              </a>
-              <a
+              {/* </a> */}
+              {/* <a
                 href={projects.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-[40px] w-[40px] bg-orange-500 rounded-3xl grid place-content-around"
-              >
+              > */}
                 <LinkIcon size={18} />
-              </a>
+              {/* </a> */}
             </span>
             <div className="flex flex-wrap  gap-[0.76rem] font-semibold">
               {projects.stacks?.map((items, index) => (
