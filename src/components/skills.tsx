@@ -1,51 +1,50 @@
-"use client";
 import React from "react";
-import { skillsData } from "@/constant/data";
-import { motion, useAnimation } from "framer-motion";
-
+import {
+  JavascriptIcon,
+  NextjsIcon,
+  ReactIcon,
+  ReduxIcon,
+  TailwindIcon,
+  TypescriptIcon,
+} from "@/assets/icons/skills-icon";
 const Skills = () => {
-  const duplicatedSkills = [...skillsData, ...skillsData];
-  const controls = useAnimation();
-  const tickerRef = React.useRef<HTMLDivElement>(null);
-
-  React.useEffect(() => {
-    const animateTicker = async () => {
-      if (!tickerRef.current) return;
-
-      const tickerWidth = tickerRef.current.scrollWidth;
-      // const viewportWidth = tickerRef.current.clientWidth;
-      const travelDistance = tickerWidth / 2; // Travel full length before restart
-      const duration = travelDistance / 20; // Adjust speed
-
-      await controls.set({ x: 0 });
-      await controls.start({
-        x: -travelDistance,
-        transition: { duration, ease: "linear" },
-      });
-
-      animateTicker(); // Restart animation after it completes
-    };
-
-    animateTicker();
-  }, [controls]);
-
   return (
-    <div className="max-w-[1200px] mx-auto mt-[3rem] px-[1.5rem]">
-      <div className="w-fit">
-        <h3 className="text-lg md:text-xl font-semibold">Tech Skills</h3>
-        <div className="h-[2px] w-full mt-1 bg-[#B0BEC5]" />
+    <div>
+      {" "}
+      <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">About me</h2>
+      <p className="text-gray-300 text-base md:text-lg mb-4 md:mb-6">
+        I specialize in building modern web applications using React,
+        TypeScript, and other cutting-edge technologies.
+      </p>
+      <div className="space-y-3 md:space-y-4">
+        <p className="text-base md:text-lg text-gray-400">My tools:</p>
+        <ul className="list-disc list-inside text-gray-300 text-base md:text-lg space-y-3 md:space-y-5 flex flex-wrap items-center place-items-center space-x-4">
+          <span className=" flex items-center gap-4">
+            <li>React</li>
+            <ReactIcon />
+          </span>
+          <span className=" flex items-center gap-4">
+            <li>NextJs</li>
+            <NextjsIcon />
+          </span>
+          <span className=" flex items-center gap-4">
+            <li>TypeScript</li>
+            <TypescriptIcon />
+          </span>
+          <span className=" flex items-center gap-4">
+            <li>JavaScript</li>
+            <JavascriptIcon />
+          </span>
+          <span className=" flex items-center gap-4">
+            <li>Tailwind CSS</li>
+            <TailwindIcon />
+          </span>
+          <span className=" flex items-center gap-4">
+            <li>Redux Toolkit</li>
+            <ReduxIcon />
+          </span>
+        </ul>
       </div>
-      <motion.div className="overflow-hidden mt-[1.5rem] w-full">
-        <motion.div
-          className="flex gap-[2.7rem] items-center justify-between"
-          ref={tickerRef}
-          animate={controls}
-        >
-          {duplicatedSkills.map((skill, index) => (
-            <div key={index}>{skill.img}</div>
-          ))}
-        </motion.div>
-      </motion.div>
     </div>
   );
 };

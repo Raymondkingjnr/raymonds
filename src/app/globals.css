@@ -139,3 +139,85 @@
     background-position: 0 0;
   }
 }
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 10%;
+    --card-hover: 0 0% 15%; /* Add this line */
+    --border: 0 0% 14.9%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --radius: 1rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-[#121212] text-foreground font-['ubuntu'] m-0 p-0;
+  }
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.bento-card {
+  @apply bg-card p-8 rounded-2xl transition-all duration-300;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+}
+
+.project-card {
+  @apply bg-card p-8 rounded-2xl transition-all duration-300;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(var(--card-hover));
+}
+
+.bento-card:hover {
+  background-color: hsl(var(--card-hover)); /* Use the new variable */
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.25rem;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .bento-card {
+    min-height: 150px;
+    padding: 1.25rem;
+  }
+
+  .responsive-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

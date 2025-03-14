@@ -1,104 +1,44 @@
-"use client";
-
 import React from "react";
-import { Button } from "./ui/button";
 import { projectsData } from "@/constant/data";
+
 import { GithubIcon, LinkIcon } from "lucide-react";
-import { motion } from "framer-motion";
 
 const Projects = () => {
-  const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
-    },
-  };
-
   return (
-    <motion.div
-      className="max-w-[1200px] px-[1.5rem] mx-auto pb-[3rem]"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-      variants={containerVariants}
-    >
-      <div className="w-fit">
-        <h3 className="text-lg md:text-xl font-semibold">Projects</h3>
-        <div className="h-[2px] w-full mt-1 bg-[#B0BEC5]" />
-      </div>
-
-      <div className="grid lg:grid-cols-2 gap-x-[5rem] gap-y-[2rem]">
+    <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 responsive-grid">
         {projectsData.map((projects, index) => (
-          <motion.div
-            key={index}
-            className="mt-[1rem]"
-            variants={itemVariants}
-            custom={index}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ delay: index * 0.5 }}
-          >
-            <h2 className="font-medium text-xl capitalize">{projects.title}</h2>
+          <section key={index} className="mt-[1rem] project-card">
+            <h2 className="font-medium text-lg uppercase">{projects.title}</h2>
             <span className="flex gap-[1rem] py-3">
-              {/* <a
+              <a
                 href={projects.gitLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-[40px] w-[40px] bg-orange-500 rounded-3xl grid place-content-around"
-              > */}
+              >
                 <GithubIcon size={18} />
-              {/* </a> */}
-              {/* <a
-                href={projects.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="h-[40px] w-[40px] bg-orange-500 rounded-3xl grid place-content-around"
-              > */}
+              </a>
+              <a href={projects.url} target="_blank" rel="noopener noreferrer">
                 <LinkIcon size={18} />
-              {/* </a> */}
+              </a>
             </span>
             <div className="flex flex-wrap  gap-[0.76rem] font-semibold">
               {projects.stacks?.map((items, index) => (
-                <p key={index}>{items}</p>
+                <p
+                  key={index}
+                  className="text-gray-300 text-sm italic font-semibold"
+                >
+                  {items}
+                </p>
               ))}
             </div>
-            <p className="pt-3 text-sm font-semibold leading-[2rem]">
+            <p className="text-gray-300 text-base md:text-lg mt-4 md:mt-6 truncate w-[200px] md:w-[300px]">
               {projects.des}
             </p>
-          </motion.div>
+          </section>
         ))}
       </div>
-
-      <div className="flex justify-center mt-[2rem]">
-        <a
-          href="https://github.com/Raymondkingjnr"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button className="bg-[#FF7F50] w-[200px] h-[50px] cursor-pointer">
-            More
-          </Button>
-        </a>
-      </div>
-    </motion.div>
+    </div>
   );
 };
 

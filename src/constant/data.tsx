@@ -55,15 +55,15 @@ export const skillsData = [
 ];
 
 export const projectsData = [
-  {
-    gitLink: "https://github.com/Raymondkingjnr/Netflix-clone",
-    url: "https://netflix-clone-drab-omega.vercel.app/",
-    title: "view Hubs",
-    stacks: ["React", "Redux", "Firebase"],
-    des: [
-      "View Hubs is a netflix website clone where users can can browser through movies and series. They can also watch a preview of their favorite movies and series so it can give them an overview of what to expect before they can actually see the movie",
-    ],
-  },
+  // {
+  //   gitLink: "https://github.com/Raymondkingjnr/Netflix-clone",
+  //   url: "https://netflix-clone-drab-omega.vercel.app/",
+  //   title: "view Hubs",
+  //   stacks: ["React", "Redux", "Firebase"],
+  //   des: [
+  //     "View Hubs is a netflix website clone where users can can browser through movies and series. They can also watch a preview of their favorite movies and series so it can give them an overview of what to expect before they can actually see the movie",
+  //   ],
+  // },
   {
     gitLink: "https://github.com/Raymondkingjnr/Carz-hub__next.js",
     url: "https://carz-hub-next-js.vercel.app/",
@@ -94,17 +94,17 @@ export const projectsData = [
       "Tailwindcss",
       "Typescript",
       "Sanity",
-      "Next Auth",
+      // "Next Auth",
       "Sanity",
       "Stripe",
     ],
     des: " a hotel management platform, designed to streamline operations for hotels. It include features such as room booking, guest management, billing, and other administrative tools to help hotel staff efficiently manage their properties.",
   },
-  {
-    gitLink: "https://github.com/Raymondkingjnr/ai-nexus",
-    url: "https://ainexus-xi.vercel.app/",
-    title: "AI Nexus",
-    stacks: ["Nextjs", "Tailwindcss", "Typescript", "Sanity", "Sanity"],
-    des: "A blog website where AI related technologies can be read particularly AI technologies that developers can use to speed up productivity",
-  },
+  // {
+  //   gitLink: "https://github.com/Raymondkingjnr/ai-nexus",
+  //   url: "https://ainexus-xi.vercel.app/",
+  //   title: "AI Nexus",
+  //   stacks: ["Nextjs", "Tailwindcss", "Typescript", "Sanity", "Sanity"],
+  //   des: "A blog website where AI related technologies can be read particularly AI technologies that developers can use to speed up productivity",
+  // },
 ];

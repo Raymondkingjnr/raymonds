@@ -4,8 +4,10 @@ export const NextjsIcon: FC<
   DetailedHTMLProps<SVGProps<SVGSVGElement>, SVGSVGElement>
 > = () => (
   <svg
-    width="64px"
-    height="64px"
+    // width="64px"
+    // height="64px"
+    width="20"
+    height="20"
     viewBox="0 0 256 256"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -37,8 +39,10 @@ export const TypescriptIcon: FC<
   DetailedHTMLProps<SVGProps<SVGSVGElement>, SVGSVGElement>
 > = () => (
   <svg
-    width="65"
-    height="64"
+    // width="65"
+    // height="64"
+    width="20"
+    height="20"
     viewBox="0 0 65 64"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -71,8 +75,10 @@ export const SassIcon: FC<
   DetailedHTMLProps<SVGProps<SVGSVGElement>, SVGSVGElement>
 > = () => (
   <svg
-    width="65"
-    height="64"
+    // width="65"
+    // height="64"
+    width="20"
+    height="20"
     viewBox="0 0 65 64"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -87,8 +93,10 @@ export const JavascriptIcon: FC<
   DetailedHTMLProps<SVGProps<SVGSVGElement>, SVGSVGElement>
 > = () => (
   <svg
-    width="64"
-    height="64"
+    // width="64"
+    // height="64"
+    width="20"
+    height="20"
     viewBox="0 0 64 64"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -120,8 +128,10 @@ export const ReactIcon: FC<
   DetailedHTMLProps<SVGProps<SVGSVGElement>, SVGSVGElement>
 > = () => (
   <svg
-    width="71"
-    height="64"
+    // width="71"
+    // height="64"
+    width="20"
+    height="20"
     viewBox="0 0 71 64"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -147,8 +157,10 @@ export const TailwindIcon: FC<
   DetailedHTMLProps<SVGProps<SVGSVGElement>, SVGSVGElement>
 > = () => (
   <svg
-    width="106"
-    height="63"
+    // width="106"
+    // height="63"
+    width="20"
+    height="20"
     viewBox="0 0 106 63"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -177,8 +189,10 @@ export const PythonIcon: FC<
   DetailedHTMLProps<SVGProps<SVGSVGElement>, SVGSVGElement>
 > = () => (
   <svg
-    width="64"
-    height="65"
+    // width="64"
+    // height="65"
+    width="20"
+    height="20"
     viewBox="0 0 64 65"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -198,8 +212,10 @@ export const ReduxIcon: FC<
   DetailedHTMLProps<SVGProps<SVGSVGElement>, SVGSVGElement>
 > = () => (
   <svg
-    width="64px"
-    height="64px"
+    // width="64px"
+    // height="64px"
+    width="20"
+    height="20"
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -223,8 +239,10 @@ export const SanityIcon: FC<
   DetailedHTMLProps<SVGProps<SVGSVGElement>, SVGSVGElement>
 > = () => (
   <svg
-    width="64px"
-    height="64px"
+    // width="64px"
+    // height="64px"
+    width="20"
+    height="20"
     viewBox="0 -204 512 512"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
